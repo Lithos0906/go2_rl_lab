@@ -19,7 +19,7 @@
 
 # Outputs
 **/runs/*
-**/logs/*
+# **/logs/*
 **/recordings/*
 **/output/*
 **/outputs/*
@@ -49,8 +49,8 @@ __pycache__/
 .vscode/
 .idea/
 # logs
-logs/
-**/logs/
+# logs/
+# **/logs/
 
 # build
 build/
@@ -80,7 +80,8 @@ __pycache__/
 *.ckpt
 
 # logs
-logs/
-**/logs/
+# logs/
+# **/logs/
 outputs/
 .omx/
+/logs/**/events.out.tfevents.*
