@@ -1,6 +1,6 @@
-policy_path: "{ROOT_DIR}/deploy/pre_train/go2/go2_moe_cts_176k_0.6984.pt" # policy.pt exported by running scripts/rsl_rl/play.py
+policy_path: "/home/fishros/Documents/go2-ws/go2_rl_robotlab/logs/rsl_rl/go2_moe_cts/2026-08-07_22-20-18/exported/policy.pt" # policy.pt exported by running scripts/rsl_rl/play.py
 
-xml_path: "{ROOT_DIR}/resources/go2/stairs_and_slope.xml"
+xml_path: "/home/fishros/Documents/go2-ws/go2_rl_robotlab/resources/go2/combined_scene.xml"
 
 render_fps: 300
 video_fps: 60
@@ -24,7 +24,7 @@ kps: [20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0]
 kds: [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5] 
 
 default_angles: [0.1,  0.8,  -1.5,  -0.1, 0.8, -1.5, 
-                 0.1,  1.0,  -1.5,  -0.1, 1.0, -1.5] 
+                 0.1,  1.0,  -1.5,  -0.1, 1.0, -1.5]
 
 lin_vel_scale: 2.0
 ang_vel_scale: 0.25 

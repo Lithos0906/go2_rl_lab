@@ -1,0 +1,10 @@
+<mujoco model="combined_scene">
+  <!-- 加载统一的场景设置（包含地面） -->
+  <include file="boxes.xml"/>
+  
+  <!-- 移除地面 -->
+  <include file="stairs_no_ground.xml"/>
+  <include file="stairs_and_slope_no_ground.xml"/>
+  
+  <include file="go2.xml"/>
+</mujoco>

@@ -1,0 +1,117 @@
+<mujoco model="stairs">
+  <statistic center="0 0 0.1" extent="0.8" />
+  
+  <visual>
+    <headlight diffuse="0.6 0.6 0.6" ambient="0.3 0.3 0.3" specular="0 0 0" />
+    <rgba haze="0.15 0.25 0.35 1" />
+    <global azimuth="-130" elevation="-20" />
+  </visual>
+  
+  <default>
+    <geom friction="1.0 0.005 0.0001" contype="1" conaffinity="1" condim="3" solref="0.02 1" />
+  </default>
+
+  <worldbody>
+    <body name="stairs_frist" pos="-2.5 4 0" euler="0 0 0">
+      <!-- 第一段楼梯 -->
+      <geom pos="1.3 0.0 0.025" type="box" size="0.15 0.75 0.025" />
+      <geom pos="1.6 0.0 0.075" type="box" size="0.15 0.75 0.025" />
+      <geom pos="1.9 0.0 0.125" type="box" size="0.15 0.75 0.025" />
+      <geom pos="2.2 0.0 0.175" type="box" size="0.15 0.75 0.025" />
+      <geom pos="2.5 0.0 0.225" type="box" size="0.15 0.75 0.025" />
+      <geom pos="2.8 0.0 0.275" type="box" size="0.15 0.75 0.025" />
+      <geom pos="3.45 0.0 0.325" type="box" size="0.5 0.75 0.025" />
+      <geom pos="4.1 0.0 0.275" type="box" size="0.15 0.75 0.025" />
+      <geom pos="4.4 0.0 0.225" type="box" size="0.15 0.75 0.025" />
+      <geom pos="4.7 0.0 0.175" type="box" size="0.15 0.75 0.025" />
+      <geom pos="5.0 0.0 0.125" type="box" size="0.15 0.75 0.025" />
+      <geom pos="5.3 0.0 0.075" type="box" size="0.15 0.75 0.025" />
+      <geom pos="5.6 0.0 0.025" type="box" size="0.15 0.75 0.025" />
+      <geom pos="6.25 0.0 0.025" type="box" size="0.5 0.75 0.025" />
+      
+      <!-- 第二段楼梯 -->
+      <geom pos="6.899 0.0 0.04" type="box" size="0.15 0.75 0.04" />
+      <geom pos="7.199 0.0 0.12" type="box" size="0.15 0.75 0.04" />
+      <geom pos="7.499 0.0 0.2" type="box" size="0.15 0.75 0.04" />
+      <geom pos="7.799 0.0 0.28" type="box" size="0.15 0.75 0.04" />
+      <geom pos="8.099 0.0 0.36" type="box" size="0.15 0.75 0.04" />
+      <geom pos="8.399 0.0 0.44" type="box" size="0.15 0.75 0.04" />
+      <geom pos="9.049 0.0 0.52" type="box" size="0.5 0.75 0.04" />
+      <geom pos="9.699 0.0 0.44" type="box" size="0.15 0.75 0.04" />
+      <geom pos="9.999 0.0 0.36" type="box" size="0.15 0.75 0.04" />
+      <geom pos="10.299 0.0 0.28" type="box" size="0.15 0.75 0.04" />
+      <geom pos="10.599 0.0 0.2" type="box" size="0.15 0.75 0.04" />
+      <geom pos="10.899 0.0 0.12" type="box" size="0.15 0.75 0.04" />
+      <geom pos="11.199 0.0 0.04" type="box" size="0.15 0.75 0.04" />
+      <geom pos="11.849 0.0 0.04" type="box" size="0.5 0.75 0.04" />
+      
+      <!-- 第三段楼梯 -->
+      <geom pos="12.498 0.0 0.055" type="box" size="0.15 0.75 0.055" />
+      <geom pos="12.798 0.0 0.165" type="box" size="0.15 0.75 0.055" />
+      <geom pos="13.098 0.0 0.275" type="box" size="0.15 0.75 0.055" />
+      <geom pos="13.398 0.0 0.385" type="box" size="0.15 0.75 0.055" />
+      <geom pos="13.698 0.0 0.495" type="box" size="0.15 0.75 0.055" />
+      <geom pos="13.998 0.0 0.605" type="box" size="0.15 0.75 0.055" />
+      <geom pos="14.648 0.0 0.715" type="box" size="0.5 0.75 0.055" />
+      <geom pos="15.298 0.0 0.605" type="box" size="0.15 0.75 0.055" />
+      <geom pos="15.598 0.0 0.495" type="box" size="0.15 0.75 0.055" />
+      <geom pos="15.898 0.0 0.385" type="box" size="0.15 0.75 0.055" />
+      <geom pos="16.198 0.0 0.275" type="box" size="0.15 0.75 0.055" />
+      <geom pos="16.498 0.0 0.165" type="box" size="0.15 0.75 0.055" />
+      <geom pos="16.798 0.0 0.055" type="box" size="0.15 0.75 0.055" />
+      <geom pos="17.448 0.0 0.055" type="box" size="0.5 0.75 0.055" />
+    </body>
+
+    <body name="stairs_second" pos="-20 -12 0" euler="0 0 0">
+      <!-- 第四段楼梯 -->
+      <geom pos="18.097 0.0 0.07" type="box" size="0.15 0.75 0.07" />
+      <geom pos="18.397 0.0 0.21" type="box" size="0.15 0.75 0.07" />
+      <geom pos="18.697 0.0 0.35" type="box" size="0.15 0.75 0.07" />
+      <geom pos="18.997 0.0 0.49" type="box" size="0.15 0.75 0.07" />
+      <geom pos="19.297 0.0 0.63" type="box" size="0.15 0.75 0.07" />
+      <geom pos="19.597 0.0 0.77" type="box" size="0.15 0.75 0.07" />
+      <geom pos="20.247 0.0 0.91" type="box" size="0.5 0.75 0.07" />
+      <geom pos="20.897 0.0 0.77" type="box" size="0.15 0.75 0.07" />
+      <geom pos="21.197 0.0 0.63" type="box" size="0.15 0.75 0.07" />
+      <geom pos="21.497 0.0 0.49" type="box" size="0.15 0.75 0.07" />
+      <geom pos="21.797 0.0 0.35" type="box" size="0.15 0.75 0.07" />
+      <geom pos="22.097 0.0 0.21" type="box" size="0.15 0.75 0.07" />
+      <geom pos="22.397 0.0 0.07" type="box" size="0.15 0.75 0.07" />
+      <geom pos="23.047 0.0 0.07" type="box" size="0.5 0.75 0.07" />
+      
+      <!-- 第五段楼梯 -->
+      <geom pos="23.696 0.0 0.085" type="box" size="0.15 0.75 0.085" />
+      <geom pos="23.996 0.0 0.255" type="box" size="0.15 0.75 0.085" />
+      <geom pos="24.296 0.0 0.425" type="box" size="0.15 0.75 0.085" />
+      <geom pos="24.596 0.0 0.595" type="box" size="0.15 0.75 0.085" />
+      <geom pos="24.896 0.0 0.765" type="box" size="0.15 0.75 0.085" />
+      <geom pos="25.196 0.0 0.935" type="box" size="0.15 0.75 0.085" />
+      <geom pos="25.846 0.0 1.105" type="box" size="0.5 0.75 0.085" />
+      <geom pos="26.496 0.0 0.935" type="box" size="0.15 0.75 0.085" />
+      <geom pos="26.796 0.0 0.765" type="box" size="0.15 0.75 0.085" />
+      <geom pos="27.096 0.0 0.595" type="box" size="0.15 0.75 0.085" />
+      <geom pos="27.396 0.0 0.425" type="box" size="0.15 0.75 0.085" />
+      <geom pos="27.696 0.0 0.255" type="box" size="0.15 0.75 0.085" />
+      <geom pos="27.996 0.0 0.085" type="box" size="0.15 0.75 0.085" />
+      <geom pos="28.646 0.0 0.085" type="box" size="0.5 0.75 0.085" />
+      
+      <!-- 第六段楼梯 -->
+      <geom pos="29.295 0.0 0.1" type="box" size="0.15 0.75 0.1" />
+      <geom pos="29.595 0.0 0.3" type="box" size="0.15 0.75 0.1" />
+      <geom pos="29.895 0.0 0.5" type="box" size="0.15 0.75 0.1" />
+      <geom pos="30.195 0.0 0.7" type="box" size="0.15 0.75 0.1" />
+      <geom pos="30.495 0.0 0.9" type="box" size="0.15 0.75 0.1" />
+      <geom pos="30.795 0.0 1.1" type="box" size="0.15 0.75 0.1" />
+      <geom pos="31.445 0.0 1.3" type="box" size="0.5 0.75 0.1" />
+      <geom pos="32.095 0.0 1.1" type="box" size="0.15 0.75 0.1" />
+      <geom pos="32.395 0.0 0.9" type="box" size="0.15 0.75 0.1" />
+      <geom pos="32.695 0.0 0.7" type="box" size="0.15 0.75 0.1" />
+      <geom pos="32.995 0.0 0.5" type="box" size="0.15 0.75 0.1" />
+      <geom pos="33.295 0.0 0.3" type="box" size="0.15 0.75 0.1" />
+      <geom pos="33.595 0.0 0.1" type="box" size="0.15 0.75 0.1" />
+      <geom pos="34.245 0.0 0.1" type="box" size="0.5 0.75 0.1" />
+    </body>
+
+
+  </worldbody>
+</mujoco>

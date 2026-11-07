@@ -131,7 +131,7 @@ def main() -> None:
     mujoco_render_utils = MujocoRenderUtils()
 
     with mujoco.viewer.launch_passive(model, data) as viewer:
-        setup_tracking_camera(viewer)
+        setup_tracking_camera(viewer, trackbodyid=5, distance=3.5, azimuth=15.0, elevation=-25.0)
         start_time = time.time()
         counter = 0
 

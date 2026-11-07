@@ -466,7 +466,7 @@ class Go2EnvCfg(ManagerBasedRLEnvCfg):
     """Merged configuration for the Go2 robot on rough terrain."""
 
     # Scene settings
-    scene: Go2SceneCfg = Go2SceneCfg(num_envs=8192, env_spacing=0.5)
+    scene: Go2SceneCfg = Go2SceneCfg(num_envs=1024, env_spacing=0.5)
     # Basic settings
     observations: ObservationsCfg = ObservationsCfg()
     actions: ActionsCfg = ActionsCfg()
@@ -507,4 +507,3 @@ class Go2EnvCfg(ManagerBasedRLEnvCfg):
         else:
             if self.scene.terrain.terrain_generator is not None:
                 self.scene.terrain.terrain_generator.curriculum = False
-                
